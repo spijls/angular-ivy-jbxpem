@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { TodoService } from '../../../application';
-import { TodoModel } from '../../../application/models/todo/todo.model';
+import { TodoService, TodoModel } from '../../../application';
 
 @Component({
   selector: 'app-todo-detail-page',

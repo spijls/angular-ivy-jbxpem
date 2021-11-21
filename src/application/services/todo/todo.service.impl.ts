@@ -7,6 +7,10 @@ import { TodoModel } from '../../models';
 export class TodoServiceImpl implements TodoService {
   constructor(private todoRepository: TodoRepository) {}
 
+  getTodos(): Observable<TodoModel[]> {
+    return this.todoRepository.getTodos();
+  }
+
   getTodo(id: number): Observable<TodoModel> {
     return this.todoRepository.getTodo(id);
   }

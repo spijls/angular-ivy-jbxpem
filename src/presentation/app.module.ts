@@ -15,11 +15,10 @@ import { TodoRepositoryImpl } from '../infrastructure';
 
 // Components
 import { AppComponent } from './app.component';
-import { TodoDetailComponent } from './components';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpClientModule, AppRouterModule],
-  declarations: [AppComponent, TodoDetailComponent],
+  declarations: [AppComponent],
   providers: [
     { provide: TodoService, useClass: TodoServiceImpl },
     { provide: TodoRepository, useClass: TodoRepositoryImpl },

@@ -9,6 +9,10 @@ export class TodoRepositoryImpl implements TodoRepository {
 
   constructor(private http: HttpClient) {}
 
+  getTodos(): Observable<TodoModel[]> {
+    return this.http.get<TodoModel[]>(`${this.BASE_URL}`);
+  }
+
   getTodo(id: number): Observable<TodoModel> {
     return this.http.get<TodoModel>(`${this.BASE_URL}/${id}`);
   }
