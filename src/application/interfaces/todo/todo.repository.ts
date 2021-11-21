@@ -1,3 +1,3 @@
 import { TodoService } from './todo.service';
 
-export interface TodoRepository extends TodoService {}
+export abstract class TodoRepository extends TodoService {}
