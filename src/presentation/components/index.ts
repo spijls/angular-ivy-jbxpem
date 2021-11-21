@@ -1,1 +1,1 @@
-export * from './todo/todo.component';
+export * from './todo-detail/todo-detail.component';
